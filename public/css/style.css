@@ -1,0 +1,235 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container{
+   flex:1;
+}
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass{
+    color:#fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color:#222222 !important;
+}
+/*footer*/
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials ,
+.f-info-brand{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.f-info {
+    text-align: center;
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+   
+/* cards */
+.card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card.review-card {
+  border: 1.5px solid #ccc !important;
+  border-radius: 0.65rem !important;
+  background: #fff !important;
+  color: #222 !important;
+  box-shadow: none !important;
+  margin-bottom: 1.5rem;
+  padding: 1.2rem 1.1rem;
+}
+
+.card.review-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.card.review-card .card-title,
+.card.review-card .card-text {
+  color: #222 !important;
+}
+
+.card::after {
+  pointer-events: none;
+}
+
+
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body{
+  padding:0 !important;
+}
+.card-text p{
+  font-weight:400 !important;
+}
+.listing-link{
+  text-decoration: none;
+  color:black !important;
+}
+
+.card {
+  border: none !important;
+  margin-bottom: 2rem;
+  position: relative; /* important so overlay stays inside card */
+  overflow: hidden;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0;               /* invisible by default */
+  transition: opacity 0.3s; /* smooth fade */
+}
+
+.card:hover::after {
+  opacity: 0.2; /* light white layer on hover */
+}
+
+.add-btn {
+  background-color: #fe424d !important ;
+  border: none !important;
+}
+.edit-btn{
+    background-color: #fe424d !important ;
+  border: none !important;
+}
+
+.show-img{
+    height: 30vh;
+}
+
+.btns{
+  display: flex;
+}
+
+.show-card{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container{
+   flex:1;
+}
+
+.show-img{
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1.5px solid #ccc;
+}
+/* Star Rating Styles */
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 2rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #ffc107;
+}
+
+.star-rating input:checked + label {
+  color: #ffc107;
+}
+
+/* Star Display */
+.star-display {
+  font-size: 1.5rem;
+}
+
+.star-display .star {
+  color: #ffc107;
+}
+
+/* Card hover effects */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.listing-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.listing-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Fake button styles */
+.fake-btn {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
